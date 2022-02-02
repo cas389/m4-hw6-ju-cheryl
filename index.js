@@ -22,11 +22,12 @@ function getPizzaOrder() {
   // if the user specified 'thick' crust, add thickCrustUpcharge
   // to pizza.cost
   // YOUR CODE HERE
-  crust = crust.trim().toLowerCase();
-  console.log("You ordered", crust, "crust.");
 
-  if (crust === "thick") {
-    pizza.cost = basePrice + thickCrustUpcharge;
+  pizza.crust = crust.trim().toLowerCase();
+  console.log("You ordered", pizza.crust, "crust.");
+
+  if (pizza.crust === "thick") {
+    pizza.cost += thickCrustUpcharge;
   } else {
     pizza.cost = basePrice;
   }
@@ -39,6 +40,7 @@ function getPizzaOrder() {
   // if the user has added toppings, add toppingsFee multiplied by
   // the number of toppings added to pizza.cost
   // YOUR CODE HERE
+
 
   var extraCheese = confirm("Would you like extra cheese?")
   // HINT: confirm() returns a boolean
