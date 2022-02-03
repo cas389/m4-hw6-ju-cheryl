@@ -31,6 +31,7 @@ function getPizzaOrder() {
   } else {
     pizza.cost = basePrice;
   }
+  console.log("Total price of pizza so far", pizza.cost);
 
 
   var toppings = prompt("Please enter additional toppings (comma separated)")
@@ -40,6 +41,39 @@ function getPizzaOrder() {
   // if the user has added toppings, add toppingsFee multiplied by
   // the number of toppings added to pizza.cost
   // YOUR CODE HERE
+  pizza.toppings = toppings.split(",");
+
+  for (let i = 0; i < pizza.toppings.length; i++) {
+     pizza.cost += toppingsFee;
+    }
+
+  console.log("You added", pizza.toppings, "to your pizza.")
+  console.log("Total price of pizza so far", pizza.cost);
+
+
+
+  // pizza.toppings = toppings.split(",");
+  //pizza.toppings = toppings.trim().toLowerCase();
+
+//  for (let i = 0; i < pizza.toppings.length; i++) {
+//    pizza.toppings[i] = 'coding';
+//  }
+
+
+
+
+//  console.log("You added", pizza.toppings, "to your pizza.")
+//  console.log("Total price of pizza so far", pizza.cost);
+
+
+
+
+
+
+
+
+
+
 
 
   var extraCheese = confirm("Would you like extra cheese?")
