@@ -42,6 +42,14 @@ function getPizzaOrder() {
   // the number of toppings added to pizza.cost
   // YOUR CODE HERE
 
+  pizza.toppings = toppings.split(",");
+  pizza.toppings = [];
+
+
+
+
+
+  console.log("Total price of pizza so far", pizza.cost);
 
 
 
