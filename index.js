@@ -35,17 +35,6 @@ function getPizzaOrder() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   var toppings = prompt("Please enter additional toppings (comma separated)")
   // HINT: prompt() will return an empty string "" if the user presses 'OK' without entering a value
   // if the user enters toppings, use .split(",") to separate toppings into an array
@@ -54,70 +43,15 @@ function getPizzaOrder() {
   // the number of toppings added to pizza.cost
   // YOUR CODE HERE
 
-   pizza.toppings = [];
+  if (toppings === "") {
+      pizza.toppings = [];
+  } else
     pizza.toppings = toppings.split(',');
     for (let i = 0; i < pizza.toppings.length; i++){
       pizza.cost += toppingsFee;
-    }
-
-  console.log(pizza.toppings);
-
-
-
-
-//  pizza.toppings = [];
-//  toppings = toppings.split(",");
-//  for (let i = 0; i < toppings.length; i++) {
-  //  pizza.cost =+ toppings * toppingsFee;
-//  }
-
-
-//  var toppingsArr = toppings.split(",");
-//  pizza.toppings = toppings.trim().toLowerCase();
-
-//  toppingsArr = pizza.toppings;
-
-//  for (let i = 0; i < pizza.toppings.length; i++){
-//    pizza.toppings = toppings.split(",");
-//    pizza.cost =+ pizza.toppings;
-//  }
-
-
-//  pizza.toppings = toppings.trim().toLowerCase();
-//  pizza.toppings.split(",");
-//  pizza.toppings = [];
-//  console.log("You didn't choose any toppings.");
-
-
-//  for (let i = 0; i < pizza.toppings.length; i++){
-//    pizza.cost =+ pizza.toppings;
-
-//     if (toppings == pizza.toppings[i]) {
-//         console.log(pizza.toppings[i])
-//    }
-//  }
-
-
-
-//  pizza.toppings = toppings.trim().toLowerCase();
-//  for (let i = 0; i < pizza.toppings; i++) {
-//  }
-//  console.log("You added the following toppings:", pizza.toppings);
+  }
+  console.log("You added the following toppings:", pizza.toppings);
   console.log("Total price of pizza so far", pizza.cost);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
