@@ -59,23 +59,6 @@ function getPizzaOrder() {
 
 
 
-
-
-
-
-//  if (toppings === "") {
-//      pizza.toppings = [];
-//  } else
-//    pizza.toppings = toppings.split(',');
-//    for (let i = 0; i < pizza.toppings.length; i++){
-  //    pizza.cost += toppingsFee;
-//  }
-//  console.log("You added the following toppings:", pizza.toppings);
-//  console.log("Total price of pizza so far", pizza.cost);
-
-
-
-
   var extraCheese = confirm("Would you like extra cheese?")
   // HINT: confirm() returns a boolean
   // if the user specifies extra cheese, set pizza.extraCheese to true or false
