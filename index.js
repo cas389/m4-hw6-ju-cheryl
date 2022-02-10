@@ -43,15 +43,35 @@ function getPizzaOrder() {
   // the number of toppings added to pizza.cost
   // YOUR CODE HERE
 
+
   if (toppings === "") {
       pizza.toppings = [];
-  } else
+  } else if (toppings === null) {
+    pizza.toppings = [];
+  } else {
     pizza.toppings = toppings.split(',');
     for (let i = 0; i < pizza.toppings.length; i++){
       pizza.cost += toppingsFee;
   }
+  }
   console.log("You added the following toppings:", pizza.toppings);
   console.log("Total price of pizza so far", pizza.cost);
+
+
+
+
+
+
+
+//  if (toppings === "") {
+//      pizza.toppings = [];
+//  } else
+//    pizza.toppings = toppings.split(',');
+//    for (let i = 0; i < pizza.toppings.length; i++){
+  //    pizza.cost += toppingsFee;
+//  }
+//  console.log("You added the following toppings:", pizza.toppings);
+//  console.log("Total price of pizza so far", pizza.cost);
 
 
 
